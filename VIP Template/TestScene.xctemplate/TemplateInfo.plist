@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultCompletionName</key>
+	<string>Testscene</string>
+	<key>Description</key>
+	<string>This generates a new module test using a customized version of the Clean Swift template.</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>The name of the scene to create</string>
+			<key>Identifier</key>
+			<string>sceneName</string>
+			<key>Name</key>
+			<string>New Scene Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___.swift</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___ViewControllerTest.swift</string>
+			<key>Description</key>
+			<string>The view controller test</string>
+			<key>Identifier</key>
+			<string>viewControllerTestName</string>
+			<key>Name</key>
+			<string>View Controller test Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___InteractorTest.swift</string>
+			<key>Description</key>
+			<string>The interactor test name</string>
+			<key>Identifier</key>
+			<string>interactorTestName</string>
+			<key>Name</key>
+			<string>Interactor Test Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___PresenterTest.swift</string>
+			<key>Description</key>
+			<string>The presenter test name</string>
+			<key>Identifier</key>
+			<string>presenterTestName</string>
+			<key>Name</key>
+			<string>Presenter Test Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___RouterTest.swift</string>
+			<key>Description</key>
+			<string>The router test name</string>
+			<key>Identifier</key>
+			<string>routerTestName</string>
+			<key>Name</key>
+			<string>Router Test Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___ConfiguratorTest.swift</string>
+			<key>Description</key>
+			<string>The configurator test name</string>
+			<key>Identifier</key>
+			<string>configuratorTestName</string>
+			<key>Name</key>
+			<string>Configurator Test Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___ViewModelTest.swift</string>
+			<key>Description</key>
+			<string>The view model test file name</string>
+			<key>Identifier</key>
+			<string>viewModelTestName</string>
+			<key>Name</key>
+			<string>View Model test Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___WorkerTest.swift</string>
+			<key>Description</key>
+			<string>The worker test file name</string>
+			<key>Identifier</key>
+			<string>workerTestName</string>
+			<key>Name</key>
+			<string>Worker Test Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>SortOrder</key>
+	<string>10</string>
+	<key>Summary</key>
+	<string>This generates a new VIP unit test.</string>
+</dict>
+</plist>
