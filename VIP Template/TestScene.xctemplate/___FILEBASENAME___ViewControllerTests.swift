@@ -43,10 +43,17 @@ class ___VARIABLE_sceneName:identifier___ViewControllerTests: XCTestCase {
         let viewModel = ___VARIABLE_sceneName:identifier___ViewModel()
         sut.update(with: viewModel)
 
-        assertSnapshot(matching: sut, as: .image(on: .iPhoneX), record: recordSnapshots)
+        assertSnapshot(
+            matching: sut,
+            as: .image(on: .iPhoneX),
+            record: recordSnapshots
+        )
     }
 
     func testViewControllerOutputSetter() {
-        XCTAssertNotNil(sut.output, "View controller output not set")
+        XCTAssertNotNil(
+            sut.output,
+            "View controller output not set"
+        )
     }
 }

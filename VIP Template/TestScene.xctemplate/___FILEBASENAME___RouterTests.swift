@@ -35,6 +35,10 @@ class ___VARIABLE_sceneName:identifier___RouterTests: XCTestCase {
     // MARK: - Tests
 
     func testViewControllerSetter() {
-        XCTAssertEqual(sut.viewController, viewController, "View controller not set")
+        XCTAssertEqual(
+            sut.viewController,
+            viewController,
+            "View controller not set"
+        )
     }
 }

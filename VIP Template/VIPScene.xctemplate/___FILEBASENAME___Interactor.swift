@@ -5,13 +5,9 @@ import UIKit
   to the `___VARIABLE_sceneName:identifier___Presenter`.
  */
 protocol ___VARIABLE_sceneName:identifier___InteractorOutput {
-
-    /// Updates the view controller after the view is loaded.
-    func presentUpdateAfterLoading()
-
     /// Triggers an update with the new view model.
     ///
-    /// - parameter viewModel: View model which will be applied. 
+    /// - parameter viewModel: View model which will be applied.
     func update(with viewModel: ___VARIABLE_sceneName:identifier___ViewModel)
 }
 
@@ -27,6 +23,7 @@ final class ___VARIABLE_sceneName:identifier___Interactor {
 
     private let output: ___VARIABLE_sceneName:identifier___InteractorOutput
     private let worker: ___VARIABLE_sceneName:identifier___WorkerInput
+    private var viewModel: ___VARIABLE_sceneName:identifier___ViewModel
 
     // MARK: - Initializers
 
@@ -43,6 +40,7 @@ final class ___VARIABLE_sceneName:identifier___Interactor {
         output: ___VARIABLE_sceneName:identifier___InteractorOutput,
         worker: ___VARIABLE_sceneName:identifier___WorkerInput = ___VARIABLE_sceneName:identifier___Worker()
     ) {
+        self.viewModel = .init()
         self.output = output
         self.worker = worker
         self.worker.output = self
@@ -56,18 +54,13 @@ extension ___VARIABLE_sceneName:identifier___Interactor: ___VARIABLE_sceneName:i
     // MARK: - Business logic
 
     func viewLoaded() {
-        output.presentUpdateAfterLoading()
-    }
-
-    func viewContentUpdated(with viewModel: ___VARIABLE_sceneName:identifier___ViewModel) {
         output.update(with: viewModel)
     }
 }
 
 extension ___VARIABLE_sceneName:identifier___Interactor: ___VARIABLE_sceneName:identifier___WorkerOutput {
-    
+
     func didSomeWork() {
-        // TODO: Fill with content
+
     }
 }
-

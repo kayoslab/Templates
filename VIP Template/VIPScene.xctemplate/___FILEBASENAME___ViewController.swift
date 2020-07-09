@@ -8,13 +8,6 @@ protocol ___VARIABLE_sceneName:identifier___ViewControllerOutput {
 
     /// The `___VARIABLE_sceneName:identifier___ViewController`'s view finished loading.
     func viewLoaded()
-
-    /// The user's input changed and therefore the model
-    /// needs an update (e.g. for validation).
-    ///
-    /// - Parameter viewModel: The model representing the
-    ///                    current state of the userinterface.
-    func viewContentUpdated(with viewModel: ___VARIABLE_sceneName:identifier___ViewModel)
 }
 
 /**

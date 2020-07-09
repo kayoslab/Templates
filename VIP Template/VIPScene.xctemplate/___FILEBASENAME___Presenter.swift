@@ -9,7 +9,7 @@ protocol ___VARIABLE_sceneName:identifier___PresenterOutput: class {
 
     /// Triggers an update with the new view model.
     ///
-    /// - parameter viewModel: View model which will be applied. 
+    /// - parameter viewModel: View model which will be applied.
     func update(with viewModel: ___VARIABLE_sceneName:identifier___ViewModel)
 }
 
@@ -17,7 +17,7 @@ protocol ___VARIABLE_sceneName:identifier___PresenterOutput: class {
   Formats the response into a `___VARIABLE_sceneName:identifier___ViewModel` and pass the result back to
   the `___VARIABLE_sceneName:identifier___ViewController`. The `___VARIABLE_sceneName:identifier___Presenter` will be in charge
   of the presentation logic. This component decides how the data will be
-  presented to the user. Also, when there is a need for transition, it will 
+  presented to the user. Also, when there is a need for transition, it will
   communicate with the `___VARIABLE_sceneName:identifier___Router`.
  */
 final class ___VARIABLE_sceneName:identifier___Presenter {
@@ -31,7 +31,7 @@ final class ___VARIABLE_sceneName:identifier___Presenter {
     /// a given `___VARIABLE_sceneName:identifier___PresenterOutput` and `___VARIABLE_sceneName:identifier___Router`.
     ///
     /// - Parameter output: A reference to the used output.
-    /// - Parameter rozter: A reference to the used router.
+    /// - Parameter router: A reference to the used router.
     init(output: ___VARIABLE_sceneName:identifier___PresenterOutput, router: ___VARIABLE_sceneName:identifier___RouterProtocol) {
         self.output = output
         self.router = router
@@ -43,17 +43,6 @@ final class ___VARIABLE_sceneName:identifier___Presenter {
 extension ___VARIABLE_sceneName:identifier___Presenter: ___VARIABLE_sceneName:identifier___InteractorOutput {
 
     // MARK: - Presentation logic
-
-    func presentUpdateAfterLoading() {
-
-        // TODO: Format the response from the Interactor
-        // and pass the result back to the View Controller
-
-        // TODO: Trigger navigation if needed 
-
-        let viewModel = ___VARIABLE_sceneName:identifier___ViewModel()
-        update(with: viewModel)
-    }
 
     func update(with viewModel: ___VARIABLE_sceneName:identifier___ViewModel) {
         output.update(with: viewModel)

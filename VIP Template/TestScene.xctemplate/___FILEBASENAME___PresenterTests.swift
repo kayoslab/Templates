@@ -14,7 +14,7 @@ class ___VARIABLE_sceneName:identifier___PresenterTests: XCTestCase {
     private var presenterOutput: ___VARIABLE_sceneName:identifier___PresenterOutputMock!
     // swiftlint:disable:next implicitly_unwrapped_optional
     private var router: ___VARIABLE_sceneName:identifier___RouterMock!
-    
+
 
     // MARK: - Test lifecycle
 
@@ -42,7 +42,7 @@ class ___VARIABLE_sceneName:identifier___PresenterTests: XCTestCase {
 
         // TODO: Test presenter
 
-        sut.presentUpdateAfterLoading()
+        sut.update(with: ___VARIABLE_sceneName:identifier___ViewModel())
 
         XCTAssert(
             presenterOutput.viewModel != nil,
@@ -52,7 +52,7 @@ class ___VARIABLE_sceneName:identifier___PresenterTests: XCTestCase {
 }
 
 private class ___VARIABLE_sceneName:identifier___PresenterOutputMock: ___VARIABLE_sceneName:identifier___PresenterOutput {
-    
+
     var viewModel: ___VARIABLE_sceneName:identifier___ViewModel?
 
     func update(with viewModel: ___VARIABLE_sceneName:identifier___ViewModel) {

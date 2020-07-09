@@ -36,6 +36,6 @@ extension ___VARIABLE_sceneName:identifier___Router: ___VARIABLE_sceneName:ident
     // MARK: - Navigation
 
     func navigateToSomewhere() {
-      // TODO: Navigate to other view controller
+      
     }
 }
